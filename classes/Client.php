@@ -9,7 +9,6 @@ class Client
 {
     private $uri;
     private $jsonrpc;
-    private $devmode = 0;
 
 
     /**
@@ -28,9 +27,10 @@ class Client
 
     /**
      * @param $user_session
+     * @param $devmode
      * @return int
      */
-    function getBalance($user_session)
+    function getBalance($user_session, $devmode)
     {
         if ($devmode == 0)
         {
@@ -45,9 +45,10 @@ class Client
 
     /**
      * @param $user_session
+     * @param $devmode
      * @return array
      */
-    function getAddress($user_session)
+    function getAddress($user_session, $devmode)
     {
         if ($devmode == 0) {
             return $this->jsonrpc->getaccountaddress("zelles(" . $user_session . ")");
@@ -61,14 +62,15 @@ class Client
 
     /**
      * @param $user_session
+     * @param $devmode
      * @return array
      */
-    function getAddressList($user_session)
+    function getAddressList($user_session,$devmode)
     {
         if ($devmode == 0)
         {
             return $this->jsonrpc->getaddressesbyaccount("zelles(" . $user_session . ")");
-        } 
+        }
         else
             {
                 return ["1test", "1test"];
@@ -79,9 +81,10 @@ class Client
 
     /**
      * @param $user_session
+     * @param $devmode
      * @return mixed
      */
-    function getTransactionList($user_session)
+    function getTransactionList($user_session,$devmode)
     {
         if ($devmode == 0)
         {
@@ -92,9 +95,10 @@ class Client
 
     /**
      * @param $user_session
+     * @param $devmode
      * @return string
      */
-    function getNewAddress($user_session)
+    function getNewAddress($user_session, $devmode)
     {
         if ($devmode == 0)
         {
@@ -111,14 +115,15 @@ class Client
      * @param $user_session
      * @param $address
      * @param $amount
+     * @param $devmode
      * @return string
      */
-    function withdraw($user_session, $address, $amount)
+    function withdraw($user_session, $address, $amount, $devmode)
     {
         if ($devmode == 0)
         {
             return $this->jsonrpc->sendfrom("zelles(" . $user_session . ")", $address, (float)$amount, 6);
-        } 
+        }
         else
             {
                 return "ok wow";
