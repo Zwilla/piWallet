@@ -1,8 +1,10 @@
 <?php if (!defined("IN_WALLET")) { die("Auth Error!"); } ?>
 
 <?php
+
 //ini_set('error_reporting', E_ALL);
 //ini_set('display_errors', 'On');
+
 class User {
 
 	private $mysqli;
