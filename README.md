@@ -1,5 +1,5 @@
-piWallet
-========
+Zwilla's Crypto piWallet
+========================
 
 piWallet is a secure opensource online altcoin wallet that works with practically any altcoin.
 
@@ -31,5 +31,7 @@ Donate:
 PayPal: http://jmartin.me/pay
 
 Buy Hardware and Code-Signed Hardware:
+
 on Ebay:  http://www.ebay.de/itm/Zwilla-s-RasPi-Cold-Bitcoin-Wallet-Storage-/322427338217
+
 from Zwilla: https://www.zwilla.de/goods/hardware/zwillas-raspi-cold-bitcoin-storage/
