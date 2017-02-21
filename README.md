@@ -30,7 +30,7 @@ Donate:
 
 PayPal: http://jmartin.me/pay
 
-Buy Hardware and Code-Signed Hardware:
+Buy Certified Hardware and Code-Signed Software:
 
 on Ebay:  http://www.ebay.de/itm/Zwilla-s-RasPi-Cold-Bitcoin-Wallet-Storage-/322427338217
 
